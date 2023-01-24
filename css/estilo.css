@@ -4,10 +4,48 @@
     transform: translate(-50%, -50%);
   }
 
-  #img-cruceta {
+  #img-cruceta-up {
     width: 100%;
     height: 100%;
   }
+  
+  #img-cruceta-up:hover {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  #img-cruceta-down {
+    width: 100%;
+    height: 100%;
+  }
+
+  #img-cruceta-down:hover {
+    width: 100%;
+    height: 100%;
+    background:"../cruceta/press-left.png";
+  }
+
+
+  #img-cruceta-right {
+    width: 100%;
+    height: 100%;
+  }
+
+  #img-cruceta-left {
+    width: 100%;
+    height: 100%;
+    background-image: url(/cruceta/left.png)
+
+  }
+
+
+  #img-cruceta-left:hover {
+    width: 100%;
+    height: 100%;
+    background-image: url(/cruceta/press-left.png)
+  }
+
   #div-cruceta-iz {
     position: absolute;
     left: 40%;
