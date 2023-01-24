@@ -1,0 +1,20 @@
+#div-pc {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #img-cruceta {
+    width: 100%;
+    height: 100%;
+  }
+  #div-cruceta-iz {
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  #div-cruceta-de {
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
