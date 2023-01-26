@@ -1,3 +1,14 @@
+body {
+  font-family: Corbel;
+	background-image: url(/img/fondohd.jpg) ;
+}
+
+.logo {
+    position: relative;
+    width: 35%;
+    height: 35%;
+}
+
 #div-pc {
     position: absolute;
     left: 50%;
