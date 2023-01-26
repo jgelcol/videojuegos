@@ -1,0 +1,131 @@
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-104%); }
+	30% { transform: translateX(-104%); }
+
+	35% { transform: translateX(-204%); }
+	50% { transform: translateX(-204%); }
+
+	55% { transform: translateX(-304%); }
+	70% { transform: translateX(-304%); }
+
+	75% { transform: translateX(-404%); }
+	90% { transform: translateX(-404%); }
+
+	95% { transform: translateX(-504%); }
+	100% { transform: translateX(-504%); }
+}*
+
+* { box-sizing: border-box; }
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+	background-color: aqua;
+}
+
+.wrapper {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	list-style-type:none;
+}
+
+.slide {
+	width: 90vw;
+	flex-shrink: 0 ;
+	animation-name: slide;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 1280px;
+	height: 720px;
+	vertical-align: baseline;
+}
+
+.slide a {
+	width: 90%;
+	display: block;
+	position: relative;
+}
+
+/*letras dentro de la imagen*/
+.caption {
+	color: #7232f2;
+	text-shadow: 3px 3px rgb(0, 0, 0) ;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 200px;
+	right: 100px;
+}
+
+.slide:target {
+	animation-name: none;
+	position: relative;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 30;
+}
+
+/*Esto cambia la barra inferior*/
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	text-decoration-color: none;
+	color: rgb(0, 0, 0);
+	font-size: 1.5rem;
+}
+
+/*Esto cambia el tamaño del contenedor de las imagenes */
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+/* Esto cabia la posicion de las letras y el tamaño*/
+.caption {
+	font-size: 50px;
+	bottom: 96px;
+	right: 50px;
+}
+}
