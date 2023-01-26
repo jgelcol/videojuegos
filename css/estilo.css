@@ -1,7 +1,15 @@
 body {
   font-family: Corbel;
-	background-image: url(/img/fondohd.jpg) ;
+	background-image: url(../img/fondohd.jpg) ;
 }
+
+.cruceta {
+    position: relative;
+    left: 10%;
+    width: 600px;
+    height: 600px;
+  }
+
 
 .logo {
     position: relative;
@@ -15,71 +23,19 @@ body {
     transform: translate(-50%, -50%);
   }
 
-  #img-cruceta-up {
-    width: 100%;
-    height: 100%;
-    
-  }
-  
-  #img-cruceta-up:hover {
-    width: 100%;
-    height: 100%;
-    background:url(/cruceta/press-up.png);
-
-  }
-  
-
-  #img-cruceta-down {
-    width: 100%;
-    height: 100%;
-  }
-
-  #img-cruceta-down:hover {
-    width: 100%;
-    height: 100%;
-    background:url(/cruceta/press-down.png);
-  }
-
-
-  #img-cruceta-right {
-    width: 100%;
-    height: 100%;
-
-  }
-
-  #img-cruceta-right:hover {
-    width: 100%;
-    height: 100%;
-    background:url(/cruceta/press-right.png);
-
-  }
-
-  #img-cruceta-left {
-    width: 100%;
-    height: 100%;
-  }
-
-
-  #img-cruceta-left:hover {
-    width: 100%;
-    height: 100%;
-    background-image: url(/cruceta/press-left.png)
-    
-
-  }
-
   #div-cruceta-iz {
     position: absolute;
-    left: 40%;
+    left: 25%;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
   }
 
   #div-cruceta-de {
     position: absolute;
-    left: 60%;
+    left: 75%;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
+    
   }
 
  
