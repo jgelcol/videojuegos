@@ -3,9 +3,25 @@ body {
 	background-image: url(../img/fondohd.jpg) ;
 }
 
+p {
+  font-family: Corbel;
+  font-size: 18px;
+  margin-left: 20%;
+  font-weight: ;
+  text-shadow: 0 0 0.2em #010108, 0 0 0.2em #f6b3e5;
+}
+
+.menu_izquierdo {
+   position: absolute;
+    left: 0%;
+    width: 400px;
+    height: 600px;
+}
+
 .cruceta {
-    position: relative;
-    left: 10%;
+    position: absolute;
+    left: 40%;
+    top: 30%;
     width: 600px;
     height: 600px;
   }
@@ -13,8 +29,10 @@ body {
 
 .logo {
     position: relative;
-    width: 35%;
-    height: 35%;
+    width: 120%;
+    left: 0%;
+    top: 4%;
+    
 }
 
 #div-pc {
@@ -24,7 +42,7 @@ body {
   }
 
   #div-cruceta-iz {
-    position: absolute;
+    position:  absolute;
     left: 25%;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
