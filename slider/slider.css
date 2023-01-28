@@ -1,21 +1,109 @@
+
+.logo {
+	position: relative;
+	width: 120%;
+	left: -12%;
+	top: 4%;
+	
+  }
+  
+  /* clase para la caja grande o div del menú izquierdo */
+  .menu_izquierdo {
+	position: absolute;
+	 left: 0%;
+	 top: 0%;
+	 padding-top: 5.8%;
+	 width: 30%;
+	 height: 100%;
+	 background-color: #0101084e;
+  }
+  
+  
+  /* diseño del texto del parrafo con clase para dar más margen a los nombres */
+  p {
+	font-family: Corbel;
+	text-align: center;
+	font-size: 18px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: 500;
+	text-shadow: 0 0 0.2em #010108, 0 0 0.2em #f6b3e5;
+	/* -webkit-text-stroke: 1px #010108; */
+	color: #f6b3e5; 
+  }
+  
+  .margen_p {
+	margin-left: 15%;
+  }
+
+/* diseño del texto del TOP 7*/
+.texto_top {
+	font-family: Corbel;
+	margin-left: -15px;
+	font-size: 90px;
+	font-weight: bold;
+	color: #20115b;
+	text-shadow: 0 0 0.2em #e3c4db, 0 0 0.2em #f6b3e5;
+	background-color: rgba(250, 235, 215, 0);
+	
+  }
+  
+#color_texto_top {
+	color: #20115b;
+	text-shadow: 0 0 0.2em #8181e9, 0 0 0.2em #f6b3e5;
+}
+
+
+/* div que contiene los juegos pequeños */
+.caja_juegos {
+	position: absolute;
+	top: 10px;
+	left: 30%;
+	width: 70%;
+	height: 200px;
+	padding-left: 2%;
+	background-color: rgba(127, 255, 212, 0);
+	
+}
+
+#juegos {
+	position: relative;
+	margin: 1%;
+	width: 11%;
+	top: 0px;
+}
+
+
+/* Div que contiene el carrusel completo */
+.carrusel {
+	position: relative;
+	top: 50px;
+	left: 13%;
+	transform: scale(55%);
+	background-color: #bcc41900;
+}
+
+
+
+
 @keyframes slide {
-	0% { transform: translateX(-4%); }
-	10% { transform: translateX(-4%); }
+	0% { transform: translateX(-5.6%); }
+	10% { transform: translateX(-5.6%); }
 
-	15% { transform: translateX(-104%); }
-	30% { transform: translateX(-104%); }
+	15% { transform: translateX(-105.6%); }
+	30% { transform: translateX(-105.6%); }
 
-	35% { transform: translateX(-204%); }
-	50% { transform: translateX(-204%); }
+	35% { transform: translateX(-205.6%); }
+	50% { transform: translateX(-205.6%); }
 
-	55% { transform: translateX(-304%); }
-	70% { transform: translateX(-304%); }
+	55% { transform: translateX(-305.6%); }
+	70% { transform: translateX(-305.6%); }
 
-	75% { transform: translateX(-404%); }
-	90% { transform: translateX(-404%); }
+	75% { transform: translateX(-405.6%); }
+	90% { transform: translateX(-405.6%); }
 
-	95% { transform: translateX(-504%); }
-	100% { transform: translateX(-504%); }
+	95% { transform: translateX(-505.6%); }
+	100% { transform: translateX(-505.6%); }
 }*
 
 * { box-sizing: border-box; }
@@ -25,12 +113,12 @@ html { scroll-behavior: smooth; }
 
 body {
 	font-family: sans-serif;
-	background-image: url(/videojuegos/img/fondohd.jpg);
+	background-image: url(../img/fondohd.jpg);
 }
 
 .wrapper {
-	max-width: 1150px;
-	margin: 0 auto;
+	max-width: 720px;
+	
 }
 
 .slider {
@@ -58,13 +146,13 @@ body {
 }
 
 .slide img {
-	width: 1280px;
-	height: 720px;
+	width: 720px;
+	height: 1080px;
 	vertical-align: baseline;
 }
 
 .slide a {
-	width: 90%;
+	width: 100%;
 	display: block;
 	position: relative;
 }
@@ -119,10 +207,10 @@ body {
 /*Esto cambia el tamaño del contenedor de las imagenes */
 @media only screen and (min-width: 1200px) {
 	.slide {
-		width: 1200px;
+		width: 720px;
 	}
 
-/* Esto cabia la posicion de las letras y el tamaño*/
+/* Esto cambia la posicion de las letras y el tamaño*/
 .caption {
 	font-size: 50px;
 	bottom: 96px;

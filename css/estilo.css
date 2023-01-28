@@ -1,6 +1,7 @@
 body {
   font-family: Corbel;
 	background-image: url(../img/fondohd.jpg) ;
+  width: fit-content;
 }
 
 .logo {
@@ -16,6 +17,7 @@ body {
   position: absolute;
    left: 0%;
    top: 0%;
+   padding-top: 5.8%;
    width: 30%;
    height: 100%;
    background-color: #0101084e;
@@ -38,19 +40,43 @@ p {
   margin-left: 15%;
 }
 
+/* div que contiene el copyright */
 .copy {
-  position: relative;
-  margin-top: 400px;
+  position: fixed;
+  top: 90%;
+  left: 30%;
   width: 100%;
   text-align: left;
-  background-color: rgba(127, 255, 212, 0);
+  background-color: rgba(21, 133, 96, 0);
+}
+
+/* diseño de la linea hr */
+.linea {
+  width: 100%;
+  margin-left: 0px;
+  size: 4px;
+  border-color: #20115b;
+}
+
+/* diseño del texto del copyright */
+.texto_copy {
+  margin-left: 20px;
+  font-size: 14px;
+  font-style: italic;
+  color: #010108;
+  
+}
+
+#color_texto_copy {
+  color: #20115b;
+  text-shadow: 0 0 0.2em #8181e9, 0 0 0.2em #f6b3e5;
 }
 
 
 /* clase para la caja grande o div que contiene toda la cruceta */
 .cruceta {
     position: absolute;
-    top: -80px;
+    top: -18px;
     left: 30%;
     width: 70%;
     height: 100%;
