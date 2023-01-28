@@ -3,73 +3,117 @@ body {
 	background-image: url(../img/fondohd.jpg) ;
 }
 
+.logo {
+  position: relative;
+  width: 120%;
+  left: -12%;
+  top: 4%;
+  
+}
+
+/* clase para la caja grande o div del menú izquierdo */
+.menu_izquierdo {
+  position: absolute;
+   left: 0%;
+   top: 0%;
+   width: 30%;
+   height: 100%;
+   background-color: #0101084e;
+}
+
+
+/* diseño del texto del parrafo con clase para dar más margen a los nombres */
 p {
   font-family: Corbel;
   font-size: 18px;
-  margin-left: 20%;
-  font-weight: ;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: 500;
   text-shadow: 0 0 0.2em #010108, 0 0 0.2em #f6b3e5;
+  /* -webkit-text-stroke: 1px #010108; */
+  color: #f6b3e5; 
 }
 
-.menu_izquierdo {
-   position: absolute;
-    left: 0%;
-    width: 400px;
-    height: 600px;
+.margen_p {
+  margin-left: 15%;
 }
 
+.copy {
+  position: relative;
+  margin-top: 400px;
+  width: 100%;
+  text-align: left;
+  background-color: rgba(127, 255, 212, 0);
+}
+
+
+/* clase para la caja grande o div que contiene toda la cruceta */
 .cruceta {
     position: absolute;
-    left: 40%;
-    top: 30%;
-    width: 600px;
-    height: 600px;
+    top: -80px;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0);
   }
 
 
-.logo {
-    position: relative;
-    width: 120%;
-    left: 0%;
-    top: 4%;
-    
-}
-
+/* ID que dan la posición a cada parte de la cruceta */
 #div-pc {
     position: absolute;
-    left: 50%;
+    left: 450px;
+    top: 150px;
     transform: translate(-50%, -50%);
+    transform: scale(120%);
   }
 
+
   #div-cruceta-iz {
-    position:  absolute;
-    left: 25%;
+    position: absolute;
+    left: 250px;
+    top: 370px;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
-  }
+    transform: scale(120%);
+  } 
+
 
   #div-cruceta-de {
     position: absolute;
-    left: 75%;
+    left: 590px;
+    top: 370px;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
-    
+    transform: scale(120%);
   }
+    
+  #div-sw {
+    position: absolute;
+    left: 450px;
+    top: 520px;
+    transform: translate(-50%, -50%);
+    transform: scale(120%);
+   
+  }
+  
 
- 
+/* Clases que hacen que la cruceta cambie de color */ 
   .presentar {
     text-align: center;
+   
     }
 
     .presentar a, .presentar img, .presentar a span {
     border:0;
     padding:0;
     margin:0;
+    
     }
 
     .presentar a {
     position: relative;
     display: inline-block;
+    
     }
 
     .presentar a span {
@@ -78,6 +122,7 @@ p {
     position: absolute;
     top: 0px;
     left: 0px;
+    
     }
 
     .presentar a:hover span {
