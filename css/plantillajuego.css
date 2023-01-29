@@ -6,6 +6,45 @@ body {
 	background-image: url(../img/fondohd.jpg) ;
 }
 
+/* div del logo */
+.caja_logo {
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 330px;
+	height: 70px;
+	background-color: #7232f200;
+}
+
+#logo {
+	margin-top: 3px;
+	height: 90%;
+	margin-left: 35px;
+}
+
+/* boton home */
+.boton {
+	position: relative;
+	width: 50px;
+	margin-right: 30px;
+	margin-top: -12px;
+	background-color: #4f5b6600;
+}
+
+/* Caja PEGI */
+.pegi {	
+	width: 60px;
+
+}
+
+/* Este div contiene todo el recuadro blanco del contenido */
+.contenido {
+	position: relative;
+	margin-top: -30px;	
+	padding-top: 0%;
+	background-color: #c876ff00;
+}
+
 .herramientas {
 	font-family: Corbel ;
 	font-weight: bold ;
@@ -15,8 +54,10 @@ div {
 	float: left ;
 }
 
+
+
 .caja1 {
-	background-color: #2A2A2A ;
+	background-color: #0101084e ;
     position: fixed;
     height: 70px;
 	width: 100%;
@@ -54,7 +95,7 @@ div {
   width: 45px;
   height: 40px;
   margin-left: -15px ;
-  background: white;
+  background: rgb(255, 255, 255);
   border: none;
   font-size: 11pt;
   float: left;
@@ -63,7 +104,7 @@ div {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  color: black;
+  color: rgb(0, 0, 0);
   -webkit-transition: width .55s ease;
   -moz-transition: width .55s ease;
   transition: width .55s ease;
@@ -100,7 +141,7 @@ div {
 .titular1 {
 	font-size: 28px ;
 	font-weight: bold ;
-	color: #c876ff ;
+	color: #c876ff00 ;
 	float: left ;
 	margin-top: 7px ;
 	font-family: Brush Script MT ;
@@ -109,7 +150,7 @@ div {
 .titular2 {
 	font-size: 28px ;
 	font-weight: bold ;
-	color: white ;
+	color: rgba(255, 255, 255, 0) ;
 	float: left ;
 	margin-top: 7px ;
 	font-family: Brush Script MT ;
@@ -144,11 +185,22 @@ li ul {
 ul li a {
 	display: block ;
 	text-decoration: none ;
-	color: white ;
+	/*color: white ;*/
+	text-shadow: 0 0 0.2em #010108, 0 0 0.2em #f6b3e5;
+	/* -webkit-text-stroke: 1px #010108; */
+	color: #f6b3e5; 
 	padding: 10px 0px ;
 	margin-left: 30px ;
-	background: #2A2A2A ;
+	background: #2a2a2a00 ;
 	font-size: 19px ;
+}
+
+#color_despl {
+	
+	text-shadow: 0 0 0.2em #a0a0be, 0 0 0.2em #f6b3e5;
+	/* -webkit-text-stroke: 1px #010108; */
+	color: #20115b
+	; 
 }
 
 li:hover ul {
@@ -201,8 +253,8 @@ li:hover ul {
 
 .centro5 {
     height: 30%;
-    width: 75%;
-    margin: 0px 150px ;
+    width: 90%;
+    margin: 0px 50px ;
 }
 
 .img {
@@ -230,6 +282,7 @@ li:hover ul {
 	font-family: Corbel ;
 	padding: 10px ;
 	text-align: center ;
+	background-color: #e00d0d00;
 }
 
 .color {
@@ -237,13 +290,14 @@ li:hover ul {
 }
 
 .titulo3 {
-	font-size: 44px ;
+	font-size: 38px ;
 	font-family: Corbel ;
 	font-weight: bold ;
 	margin-left: 100px ;
 }
 
 .texto {
-	font-size: 24px ;
+	text-align: justify;
+	font-size: 20px ;
 	font-family: Corbel ;
 }
