@@ -11,7 +11,7 @@ body {
 	position: relative;
 	width: 120%;
 	left: -12%;
-	top: 2%;
+	top: 50px;
 	
   }
   
@@ -20,7 +20,7 @@ body {
 	position: fixed;
 	 left: 0%;
 	 top: 0%;
-	 padding-top: 5.8%;
+	 
 	 width: 30%;
 	 height: 100%;
 	 background-color: #0101084e;
@@ -96,11 +96,38 @@ body {
 	top: 0px;
 }
 
+/* div controles pc */
+.control {
+	position: absolute;
+	top: 300px;
+	left: 30.5%;
+	width: 70%;
+	height: 400px;
+	padding-left: 2%;
+	vertical-align: middle;
+	background-color: rgba(127, 255, 212, 0);
+}
+
+#control-izq {
+	position: relative;
+	width: 19%;
+	margin-top: 10%;
+	margin-left: 1%;
+
+}
+
+#control-der {
+	position: relative;
+	width: 20%;
+	margin-left: 46%;
+	margin-top: 10%;
+}
+
 
 /* div mando ps - xbox */
 .dual {
 	position: absolute;
-	top: 350px;
+	top: 300px;
 	left: 30.5%;
 	width: 70%;
 	height: 400px;
@@ -111,23 +138,23 @@ body {
 
 #dual-izq {
 	position: relative;
-	width: 22%;
+	width: 18%;
 	margin-top: 10%;
-	margin-left: -2%;
+	margin-left: 2%;
 
 }
 
 #dual-der {
 	position: relative;
-	width: 22%;
-	margin-left: 49%;
+	width: 18%;
+	margin-left: 50%;
 	margin-top: 10%;
 }
 
 /* div mandos switch */
 .joy {
 	position: absolute;
-	top: 350px;
+	top: 300px;
 	left: 30%;
 	width: 70%;
 	height: 400px;
@@ -138,25 +165,26 @@ body {
 
 #joy-izq {
 	position: relative;
-	width: 14%;
+	width: 11%;
 	margin-top: 9.5%;
+	margin-left: 6%;
 
 }
 
 #joy-der {
 	position: relative;
-	width: 14%;
-	margin-left: 62%;
+	width: 11%;
+	margin-left: 57%;
 	margin-top: 9.5%;
 }
 
 /* div del botón Home */
 .home {
     position:  absolute;
-    top: 98%;
+    top: 85%;
     left: 90%;
-	width: 10%;
-    height: 14%;
+	width: 8%;
+    height: 12%;
     background-color: rgba(108, 166, 26, 0);
 }
 
@@ -164,16 +192,16 @@ body {
     position:  relative;
     top: 10%;
     left: 20%;
-	width: 85px;
+	width: 55%;
 }
 
 
 /* Div que contiene el carrusel completo */
 .carrusel {
 	position: relative;
-	top: 50px;
+	margin-top: 10px;
 	left: 13%;
-	transform: scale(55%);
+	transform: scale(45%);
 	background-color: #bcc41900;
 }
 

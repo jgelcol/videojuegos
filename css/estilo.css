@@ -1,15 +1,16 @@
 body {
   font-family: Corbel;
-	background-image: url(../img/fondohd.jpg) ;
+	background-image: url(../img/fondohd.jpg);
   width: fit-content;
   height: fit-content;
 }
+
 
 .logo {
   position: relative;
   width: 120%;
   left: -12%;
-  margin-top: -30px;
+  margin-top: 50px;
   
 }
 
@@ -18,9 +19,8 @@ body {
   position: absolute;
    left: 0%;
    top: 0%;
-   padding-top: 5.8%;
    width: 30%;
-   height: 90%;
+   height: 100%;
    background-color: #0101084e;
 }
 
