@@ -1,8 +1,14 @@
+html, body {  
+  margin:0px;  
+  height:100%;  
+  width: 100%;
+}  
+
 body {
   font-family: Corbel;
 	background-image: url(../img/fondohd.jpg);
-  width: fit-content;
-  height: fit-content;
+  /* width: fit-content;
+  height: fit-content; */
 }
 
 
@@ -44,7 +50,7 @@ p {
 /* div que contiene el copyright */
 .copy {
   position: fixed;
-  top: 85%;
+  top: 90%;
   left: 30%;
   width: 100%;
   text-align: left;
@@ -75,7 +81,20 @@ p {
 
 
 /* clase para la caja grande o div que contiene toda la cruceta */
+.cajon_cruceta {
+  position: absolute;
+  left: 30%;
+  width: 70%;  
+  background-color: #20115b00;
+}
+
 .cruceta {
+  position: relative; 
+  transform: scale(80%);
+  background-color: rgba(0, 255, 255, 0);
+}
+
+/*#cruceta {
     position: absolute;
     top: -135px;
     left: 30%;
@@ -83,7 +102,7 @@ p {
     height: 100%;
     transform: scale(80%);
     background-color: rgba(0, 255, 255, 0);
-  }
+  }*/
 
 
 /* ID que dan la posición a cada parte de la cruceta */
