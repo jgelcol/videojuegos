@@ -21,7 +21,7 @@ body {
 
 /* clase para la caja grande o div del menú izquierdo */
 .menu_izquierdo {
-  position: absolute;
+  position: fixed;
    left: 0%;
    top: 0%;
    width: 30%;
