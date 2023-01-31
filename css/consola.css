@@ -11,8 +11,7 @@ body {
 
 .logo {
     position: relative;
-    width: 120%;
-    left: -12%;
+    width: 90%;
     top: 50px;
    
   }
@@ -220,171 +219,149 @@ body {
 
 
 
-
 /* Div que contiene el carrusel completo */
 .carrusel {
-    position: relative;
-    margin-top: 10px;
-    left: 13%;
-    transform: scale(45%);
-    background-color: #bcc41900;
+	position: relative;
+	top: -10px;
+	left: 13%;
+	transform: scale(45%);
+	background-color: #bcc41900;
 }
-
-
-
-
 
 
 
 
 @keyframes slide {
-    0% { transform: translateX(-5.6%); }
-    10% { transform: translateX(-5.6%); }
+	0% { transform: translateX(-5.5%); }
+	12% { transform: translateX(-5.5%); }
 
+	15% { transform: translateX(-105.5%); }
+	24% { transform: translateX(-105.5%); }
 
-    15% { transform: translateX(-105.6%); }
-    30% { transform: translateX(-105.6%); }
+	27% { transform: translateX(-205.5%); }
+	37% { transform: translateX(-205.5%); }
 
+	40% { transform: translateX(-305.5%); }
+	50% { transform: translateX(-305.5%); }
 
-    35% { transform: translateX(-205.6%); }
-    50% { transform: translateX(-205.6%); }
+	53% { transform: translateX(-405.5%); }
+	63% { transform: translateX(-405.5%); }
 
-
-    55% { transform: translateX(-305.6%); }
-    70% { transform: translateX(-305.6%); }
-
-
-    75% { transform: translateX(-405.6%); }
-    90% { transform: translateX(-405.6%); }
-
-
-    95% { transform: translateX(-505.6%); }
-    100% { transform: translateX(-505.6%); }
+	66% { transform: translateX(-505.5%); }
+	76% { transform: translateX(-505.5%); }
+	
+	79% { transform: translateX(-605.5%); }
+	89% { transform: translateX(-605.5%); }	
+	
+	92% { transform: translateX(-705.5%); }
+	100% { transform: translateX(-705.5%); }
 }*
 
-
 * { box-sizing: border-box; }
 * { box-sizing: border-box; }
-
 
 html { scroll-behavior: smooth; }
 
 
 
-
-
-
 .wrapper {
-    max-width: 720px;
-   
+	max-width: 720px;
+	
 }
-
 
 .slider {
-    position: relative;
+	position: relative;
 }
-
 
 .slides {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    list-style-type:none;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	list-style-type:none;
 }
-
 
 .slide {
-    width: 100vw;
-    flex-shrink: 0 ;
-    animation-name: slide;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+	width: 100vw;
+	flex-shrink: 0 ;
+	animation-name: slide;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
-
 
 .slides:hover .slide {
-    animation-play-state: paused;
+	animation-play-state: paused;
 }
-
 
 .slide img {
-    width: 720px;
-    height: 1080px;
-    vertical-align: baseline;
+	width: 720px;
+	height: 1080px;
+	vertical-align: baseline;
 }
-
 
 .slide a {
-    width: 100%;
-    display: block;
-    position: relative;
+	width: 100%;
+	display: block;
+	position: relative;
 }
-
 
 /*letras dentro de la imagen*/
 .caption {
-    color: #7232f2;
-    text-shadow: 3px 3px rgb(0, 0, 0) ;
-    font-size: 8vw;
-    position: absolute;
-    bottom: 200px;
-    right: 100px;
+	color: #ffffffda;
+	text-shadow: 0px 0px rgb(0, 0, 0) ;
+	font-size: 3vw;
+	position: absolute;
+	bottom: 200px;
+	right: 100px;
 }
-
 
 .slide:target {
-    animation-name: none;
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 30;
+	animation-name: none;
+	position: relative;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 30;
 }
-
 
 /*Esto cambia la barra inferior*/
 .slider-controler {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	z-index: 100;
 }
-
 
 .slider-controler li {
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: bottom;
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: bottom;
 }
-
 
 .slider-controler a {
-    display: inline-block;
-    vertical-align: top;
-    text-decoration: none;
-    text-decoration-color: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	text-decoration-color: none;
+	color: rgb(0, 0, 0);
+	font-size: 1.5rem;
 }
-
 
 /*Esto cambia el tamaño del contenedor de las imagenes */
 @media only screen and (min-width: 1200px) {
-    .slide {
-        width: 720px;
-    }
-
+	.slide {
+		width: 720px;
+	}
 
 /* Esto cambia la posicion de las letras y el tamaño*/
 .caption {
-    font-size: 50px;
-    bottom: 96px;
-    right: 50px;
+	font-size: 50px;
+	bottom: 96px;
+	right: 50px;
 }
 }

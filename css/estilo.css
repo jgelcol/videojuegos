@@ -8,8 +8,7 @@ body {
 
 .logo {
   position: relative;
-  width: 120%;
-  left: -12%;
+  width: 100%;
   margin-top: 50px;
   
 }
@@ -32,6 +31,7 @@ p {
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 500;
+  text-align: justify;
   text-shadow: 0 0 0.2em #010108, 0 0 0.2em #f6b3e5;
   /* -webkit-text-stroke: 1px #010108; */
   color: #f6b3e5; 
