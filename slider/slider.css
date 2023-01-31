@@ -136,23 +136,29 @@ body {
 
 
 @keyframes slide {
-	0% { transform: translateX(-5.6%); }
-	10% { transform: translateX(-5.6%); }
+	0% { transform: translateX(-5.5%); }
+	12% { transform: translateX(-5.5%); }
 
-	15% { transform: translateX(-105.6%); }
-	30% { transform: translateX(-105.6%); }
+	15% { transform: translateX(-105.5%); }
+	24% { transform: translateX(-105.5%); }
 
-	35% { transform: translateX(-205.6%); }
-	50% { transform: translateX(-205.6%); }
+	27% { transform: translateX(-205.5%); }
+	37% { transform: translateX(-205.5%); }
 
-	55% { transform: translateX(-305.6%); }
-	70% { transform: translateX(-305.6%); }
+	40% { transform: translateX(-305.5%); }
+	50% { transform: translateX(-305.5%); }
 
-	75% { transform: translateX(-405.6%); }
-	90% { transform: translateX(-405.6%); }
+	53% { transform: translateX(-405.5%); }
+	63% { transform: translateX(-405.5%); }
 
-	95% { transform: translateX(-505.6%); }
-	100% { transform: translateX(-505.6%); }
+	66% { transform: translateX(-505.5%); }
+	76% { transform: translateX(-505.5%); }
+	
+	79% { transform: translateX(-605.5%); }
+	89% { transform: translateX(-605.5%); }	
+	
+	92% { transform: translateX(-705.5%); }
+	100% { transform: translateX(-705.5%); }
 }*
 
 * { box-sizing: border-box; }
